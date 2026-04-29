@@ -82,3 +82,17 @@ test("si la contraseña no contiene espacios en blanco, pasa", () => {
     expect(resultado.esValida).toBe(true);
     expect(resultado.errores).toEqual([]);
 });
+
+test("si la contraseña contiene el username, falla", () => {
+    const resultado = validarPassword("Mechi123!", "mechi");
+
+    expect(resultado.esValida).toBe(false);
+    expect(resultado.errores).toContain("ERROR: la contraseña no debe contener el username");
+});
+
+test("si la contraseña no contiene el username, pasa", () => {
+    const resultado = validarPassword("Mechi123!", "pedro");
+
+    expect(resultado.esValida).toBe(true);
+    expect(resultado.errores).toEqual([]);
+});

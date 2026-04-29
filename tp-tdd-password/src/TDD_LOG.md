@@ -116,16 +116,22 @@ Evidencia de fallo (Rojo):
 
 Cambio mínimo (Verde): hice la validacion con un if
 Refactor: hice la validacion con el mismo metodo de validaciones que vengo trabajando 
-Commit/hash:
+Commit/hash:94797db87e74bfad1964731e7ffdb9d391b2348e
 ------------------------------------------------------------------------------------------------------
 
 
-2: 
-Ciclo: 2
+7: 
+Ciclo: 7
 Test agregado: 
+si la contraseña contiene el username, falla
+si la contraseña no contiene el username, pasa
 Evidencia de fallo (Rojo): 
-Cambio mínimo (Verde):
-Refactor:
+expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+Cambio mínimo (Verde): hice la validacion con un if
+Refactor: hice la validacion con el ismo metodo de validaciones que vengo trabajando
 Commit/hash:
 ------------------------------------------------------------------------------------------------------
 

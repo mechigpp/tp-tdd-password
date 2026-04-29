@@ -15,3 +15,6 @@ module.exports = validarPassword;
 
 promt: como se puede hacer una condicion sin ifs que verifique que se utilice un simbolo/caracter especial
 const noTieneSimbolo = !/[^a-zA-Z0-9]/.test(contraseña);
+
+promt: puse el username como parte de la contraseña y el test no me tiro error
+chat me explico que no estaba considerando mayusculas y minusculas por lo tanto pase todo a minusculas.
