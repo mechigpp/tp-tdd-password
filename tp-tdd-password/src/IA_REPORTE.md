@@ -13,4 +13,5 @@ function validarPassword(contraseña){
 
 module.exports = validarPassword;
 
-
+promt: como se puede hacer una condicion sin ifs que verifique que se utilice un simbolo/caracter especial
+const noTieneSimbolo = !/[^a-zA-Z0-9]/.test(contraseña);

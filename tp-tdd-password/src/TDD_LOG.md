@@ -78,16 +78,25 @@ Evidencia de fallo (Rojo):
     Received: false
 Cambio mínimo (Verde): agregue la validacion con un if
 Refactor: cambie la validacion por el mismo metodo que veniamos usando para las otras validaciones
-Commit/hash:
+Commit/hash: 9d0ead996d654c902485749b8ea46e3a6e570ce7
 ------------------------------------------------------------------------------------------------------
 
 
-2: 
-Ciclo: 2
+5: 
+Ciclo: 5
 Test agregado: 
+si la contraseña no tiene minimo 1 simbolo especial, falla
+ si la contraseña  tiene minimo 1 simbolo especial, pasa
 Evidencia de fallo (Rojo): 
-Cambio mínimo (Verde):
-Refactor:
+ ● si la contraseña no tiene minimo 1 simbolo especial, falla
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+Cambio mínimo (Verde): agregue la validacion con un if
+Refactor: cambie la validacion a la misma validacion que veniamos trabajando
 Commit/hash:
 ------------------------------------------------------------------------------------------------------
 
