@@ -5,9 +5,12 @@ function validarPassword(contraseña){
 
     const noTieneLongitudMinima = contraseña.length < 8;
     const noTieneMayuscula = !/[A-Z]/.test(contraseña);
+    const noTieneMinuscula = !/[a-z]/.test(contraseña);
+
 
     noTieneLongitudMinima && errores.push("ERROR: la contraseña debe tener al menos 8 caracteres");
     noTieneMayuscula && errores.push("ERROR: debe contener al menos una letra en mayuscula");
+   noTieneMinuscula && errores.push("ERROR: debe contener al menos una letra en minuscula");
 
     return {
         esValida: errores.length === 0,

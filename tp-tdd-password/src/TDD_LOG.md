@@ -35,19 +35,31 @@ Evidencia de fallo (Rojo):
 
     Expected: true
     Received: false
-Cambio mínimo (Verde):
-Refactor:
-Commit/hash:
+
+Cambio mínimo (Verde): hago la comprobacion minima utilizando if 
+Refactor: chat gpt me dio una funcion para verificar de una manera mas eficiente que contenga una mayuscula
+Commit/hash:3f31eae801537b910f013f27a86549812674caa1
+
 
 ------------------------------------------------------------------------------------------------------
 
 
-2: 
-Ciclo: 2
+3: 
+Ciclo: 3
 Test agregado: 
+si la contraseña tiene como minimo 1 letra mayuscula, pasa
+si la contraseña no tiene minimo 1 letra en minuscula, falla
+si la contraseña  tiene minimo 1 letra en minuscula, pasa
+
 Evidencia de fallo (Rojo): 
-Cambio mínimo (Verde):
-Refactor:
+ ● si la contraseña no tiene minimo 1 letra en minuscula, falla
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+Cambio mínimo (Verde): verifique la comprobacion con un if
+Refactor: saque el uso del if, implemente la misma logica que con las mayusculas pero con las minusculas
 Commit/hash:
 ------------------------------------------------------------------------------------------------------
 

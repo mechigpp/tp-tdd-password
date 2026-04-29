@@ -12,3 +12,5 @@ function validarPassword(contraseña){
 }
 
 module.exports = validarPassword;
+
+
