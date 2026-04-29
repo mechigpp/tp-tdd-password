@@ -68,3 +68,17 @@ test("si la contraseña no tiene minimo 1 simbolo especial, falla", () => {
     expect(resultado.esValida).toBe(true);
     expect(resultado.errores).toEqual([]);
 });
+
+test("si la contraseña contiene espacios en blanco, falla", () => {
+    const resultado = validarPassword("Mechi 123!");
+
+    expect(resultado.esValida).toBe(false);
+    expect(resultado.errores).toContain("ERROR: no debe contener espacios en blanco");
+});
+
+test("si la contraseña no contiene espacios en blanco, pasa", () => {
+    const resultado = validarPassword("Mechi123!");
+
+    expect(resultado.esValida).toBe(true);
+    expect(resultado.errores).toEqual([]);
+});

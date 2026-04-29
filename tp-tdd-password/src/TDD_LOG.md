@@ -97,16 +97,25 @@ Evidencia de fallo (Rojo):
 
 Cambio mínimo (Verde): agregue la validacion con un if
 Refactor: cambie la validacion a la misma validacion que veniamos trabajando
-Commit/hash:
+Commit/hash:26b297c2d5218f7496b969136c515f1a1b1da295
 ------------------------------------------------------------------------------------------------------
 
 
-2: 
-Ciclo: 2
+6: 
+Ciclo: 6
 Test agregado: 
+si la contraseña no contiene espacios en blanco, pasa
+si la contraseña  contiene espacios en blanco, falla
 Evidencia de fallo (Rojo): 
-Cambio mínimo (Verde):
-Refactor:
+ ● si la contraseña contiene espacios en blanco, falla
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+Cambio mínimo (Verde): hice la validacion con un if
+Refactor: hice la validacion con el mismo metodo de validaciones que vengo trabajando 
 Commit/hash:
 ------------------------------------------------------------------------------------------------------
 
