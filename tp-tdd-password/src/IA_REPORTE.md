@@ -1,14 +1,10 @@
-
+prompt: como hago para validar que una palabra tenga minimo una letra mayuscula sin utilizar ifs
+respuesta: 
 
 function validarPassword(contraseña){
     const errores = [];
-
-    const noTieneLongitudMinima = contraseña.length < 8;
     const noTieneMayuscula = !/[A-Z]/.test(contraseña);
-
-    noTieneLongitudMinima && errores.push("ERROR: la contraseña debe tener al menos 8 caracteres");
     noTieneMayuscula && errores.push("ERROR: debe contener al menos una letra en mayuscula");
-
     return {
         esValida: errores.length === 0,
         errores
@@ -16,6 +12,3 @@ function validarPassword(contraseña){
 }
 
 module.exports = validarPassword;
-
-
-
