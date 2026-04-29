@@ -64,12 +64,20 @@ Commit/hash:
 ------------------------------------------------------------------------------------------------------
 
 
-2: 
-Ciclo: 2
+4: 
+Ciclo: 4
 Test agregado: 
+si la contraseña no tiene minimo 1 numero, falla
+si la contraseña tiene minimo 1 numero, pasa
 Evidencia de fallo (Rojo): 
-Cambio mínimo (Verde):
-Refactor:
+  ● si la contraseña  tiene minimo 1 numero, pasa
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+Cambio mínimo (Verde): agregue la validacion con un if
+Refactor: cambie la validacion por el mismo metodo que veniamos usando para las otras validaciones
 Commit/hash:
 ------------------------------------------------------------------------------------------------------
 
