@@ -126,40 +126,33 @@ Test agregado:
 si la contraseña contiene el username, falla
 si la contraseña no contiene el username, pasa
 Evidencia de fallo (Rojo): 
-expect(received).toBe(expected) // Object.is equality
+ ● si la contraseña no contiene el username, pasa
+
+    expect(received).toBe(expected) // Object.is equality
 
     Expected: false
     Received: true
+
 Cambio mínimo (Verde): hice la validacion con un if
 Refactor: hice la validacion con el ismo metodo de validaciones que vengo trabajando
-Commit/hash:
+Commit/hash: 8374639f4a5c1f254ca2edf6b3f86fc4580044fc
 ------------------------------------------------------------------------------------------------------
 
 
-2: 
-Ciclo: 2
+8: 
+Ciclo: 8
 Test agregado: 
+si la contraseña tiene 3 caracteres iguales consecutivos, falla
+si la contraseña no tiene 3 caracteres iguales consecutivos, pasa
 Evidencia de fallo (Rojo): 
-Cambio mínimo (Verde):
-Refactor:
+  ● si la contraseña tiene 3 caracteres iguales consecutivos, falla
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+Cambio mínimo (Verde): 
+Refactor: en este caso no se me ocurrio como hacer el refactor, tuve que dejarlo como un for
 Commit/hash:
 ------------------------------------------------------------------------------------------------------
 
-
-2: 
-Ciclo: 2
-Test agregado: 
-Evidencia de fallo (Rojo): 
-Cambio mínimo (Verde):
-Refactor:
-Commit/hash:
-------------------------------------------------------------------------------------------------------
-
-
-2: 
-Ciclo: 2
-Test agregado: 
-Evidencia de fallo (Rojo): 
-Cambio mínimo (Verde):
-Refactor:
-Commit/hash:
