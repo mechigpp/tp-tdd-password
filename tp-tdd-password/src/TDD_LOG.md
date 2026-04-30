@@ -1,3 +1,8 @@
+- Nombre y apellido: Mercedes Garcia Prada
+- Fecha: 29/4/2026
+- Curso/Grupo: PT
+
+
 1:
 Ciclo: 1
 Test agregado: si la contraseña tiene menos de 8 caracteres, falla
@@ -153,6 +158,13 @@ Evidencia de fallo (Rojo):
     Received: true
 Cambio mínimo (Verde): 
 Refactor: en este caso no se me ocurrio como hacer el refactor, tuve que dejarlo como un for
-Commit/hash:
+Commit/hash:7eade0494cf91ba92cf3a7e124e08a9025ae04c4
 ------------------------------------------------------------------------------------------------------
 
+
+## Reflexión breve final
+1. ¿Qué regla le resultó más compleja y por qué?
+La ultima regla de los 3 caracteres iguales consecutivos me resulto lo mas dificil de validar, tuve que usar un for ya que no se me ocurria otra manera de hacerlo.
+
+2. ¿Qué refactor mejoró más la claridad de su código?
+El primer refactor que hice me ayudo a ver una manera de comprobar las condiciones de la contraseña de tal forma de poder aplicar esa misma manera para las otras condiciones, haciendo el codigo mas practico y claro.
